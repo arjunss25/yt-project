@@ -1,0 +1,34 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-shine {
+    padding: 12px 48px;
+    color: #0FFF50;
+    background: linear-gradient(to right, #9f9f9f 0, #0FFF50 10%, #868686 20%);
+    background-position: 0;
+    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
